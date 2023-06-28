@@ -7,7 +7,7 @@ import Nav from './Nav';
 
 function App() {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {path: "/", element: <Nav />, children: [
       {index: true, element: <Home />},
       {path: "/about", element: <About />},
